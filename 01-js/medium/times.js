@@ -9,5 +9,18 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+    const startTime = new Date();
+    let result = 0;
+    let i = 1;
+    while (i <= n) {
+        result += i;
+        i++;
+    }
+    const endTime = new Date();
+    const computeTime = (endTime - startTime)/1000 // to convert milliseconds to seconds;
+    return computeTime;
 }
+
+calculateTime(100);
+calculateTime(100000);
+calculateTime(1000000000);

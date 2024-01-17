@@ -3,10 +3,23 @@
   "version": "1.0.0",
   "description": "You are provided empty JavaScript files (or having function signatures) in this directory.  You have to follow the instructions given in each file and write the code in the same file to complete the assignment.",
   "main": "anagram.js",
+  "scripts": {
+    "tests": "jest ./tests",
+    "test-anagram": "jest ./tests/anagram.test.js",
+    "test-expenditure": "jest ./tests/expenditure-analysis.test.js",
+    "test-findLargestElement": "jest ./tests/findLargestElement.test.js",
+    "test-countVowels": "jest ./tests/countVowels.test.js",
+    "test-palindrome": "jest ./tests/palindrome.test.js",
+    "test-calculator": "jest ./tests/calculator.test.js",
+    "test-todo-list": "jest ./tests/todo-list.test.js"
+  },
   "directories": {
     "test": "tests"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "2": "^3.0.0"
+  }
 }
